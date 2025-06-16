@@ -5,7 +5,6 @@ import com.example.crudapi.model.Event;
 import com.example.crudapi.service.EventService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/event")
 @AllArgsConstructor
+@CrossOrigin
 public class EventController {
 
     EventService eventService;
